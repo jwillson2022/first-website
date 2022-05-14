@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Personal Home Page  Template</title>
+  <title>CodePen - Personal Home Page Template</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Permanent+Marker&display=swap" rel="stylesheet"><link rel='stylesheet' href='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.css'><link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.css'>
+  <link rel="stylesheet" href="./style.css">
 
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<!-- =================
+  <!-- partial:index.partial.html -->
+  <!-- =================
   WRITE YOUR HTML HERE
 
 You only need to write the HTML that goes inside the <body> tag. To add things to the <head>, click the ⚙️ 
    ===================
 -->
 
-<!--- All the tests are red! You have to make them green. 
+  <!--- All the tests are red! You have to make them green. 
 
 Q How do you make the tests pass?
 A Meet the requirements!
@@ -25,55 +29,63 @@ A Meet the requirements!
 Make the first test pass by adding a <header> </header>-->
 
 
-    <header class="c-site-header">
-        <div class="container">
-            <img src="https://i.imgur.com/9Zx9Tb8.jpg" alt="graffiti art with working jaydog" width="600" height="150"class="jaydog">
+  <header class="c-site-header">
+    <div class="container">
+      <img src="https://i.imgur.com/9Zx9Tb8.jpg" alt="graffiti art with working jaydog" width="600" height="150"
+        class="jaydog">
+    </div>
+    <h1>DrawnByDog.com</h1>
+  </header>
+
+
+  <nav aria-label="Main Site Links.">
+    <a href="#about">About</a>
+    <a href="#image">Image</a>
+    <a href="#video">Video</a>
+  </nav>
+
+
+  <main>
+    <section class="about-section" id="about">
+      <h2>about me!</h2><br>
+      <p class="text">Hi, I’m Jay, I’m an artist and creative person with a natural curiosity about life. I have a
+        number of hobbies including art and technology. Walking and working out is also Something I enjoy, It seems to
+        work wonders on my wellbeing and helps clear my mind. </p>
+
+    </section>
+
+
+    <section class="image-section" id="image">
+      <h2>image</h2><br>
+      <div class="image-container">
+        <img src="https://i.imgur.com/YlKEvXY.jpg" alt="image of a 4colour ink drawing orc" class="image1">
+        <div class="text1">
+          <h3>Hand drawing with 4 colours</h3>
+          <p>This is a drawing I did in 4 diffent colours, I split the page in to four sections and drawing a basic
+            outline in pencil first. Then inked in each section blending alittle of the neighbouring in to each section.
+          </p>
         </div>
-          <h1>DrawnByDog.com</h1>
-    </header>
+      </div>
+    </section>
 
+    <section class="video-section" id="video">
+      <h2>video</h2><br>
+      <div class="image-container">
+        <iframe src="https://www.youtube.com/embed/WI_Z6g1R1AY" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
 
-    <nav aria-label="Main Site Links.">
-        <a href="#about">About</a>
-         <a href="#image">Image</a>
-          <a href="#video">Video</a>
-    </nav>
+        <div class="text2">
+          <h3>Digital Drawing</h3>
+          <p>This a Digital drawing I did on my tablet, on an app called Ibis paint. The process of digital drawing is
+            not the same as drawing with a pen. It is easier to colour and edit than a hand draw image, which has to be
+            scanned and traced. I hope one day to be able to get an ipad and pen which is top end tech. </p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-
-    <main>
-        <section class="about-section" id="about">
-            <h2>about me!</h2><br>
-              <p class="text">Hi, I’m Jay, I’m an artist and creative person with a natural curiosity about life. I have a number of hobbies including art and technology. Walking and    working out is also Something I enjoy, It seems to work wonders on my wellbeing and helps clear my mind.                       </p>
-
-        </section>
-
-
-        <section class="image-section" id="image">
-            <h2>image</h2><br>
-             <div class="image-container">
-                <img src="https://i.imgur.com/YlKEvXY.jpg"
-                     alt="image of a 4colour ink drawing orc" class="image1">
-                <div class="text1">
-                    <h3>Hand drawing with 4 colours</h3>
-                      <p>This is a drawing I did in 4 diffent colours, I split the page in to four sections and drawing a basic outline in pencil first. Then inked in each section blending alittle of the                              neighbouring in to each section. </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="video-section" id="video">
-            <h2>video</h2><br>
-              <div class="image-container">
-                <iframe src="https://www.youtube.com/embed/WI_Z6g1R1AY"               title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                
-                <div class="text2">
-                  <h3>Digital Drawing</h3>
-                    <p>This a Digital drawing I did on my tablet, on an app called Ibis paint. The process of digital drawing is not the same as drawing with a pen. It is easier to colour and edit than a hand draw image, which has to be scanned and traced. I hope one day to be able to get an ipad and pen which is top end tech. </p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="c-site-footer"> copyright j.willson 2022 &copy;</footer>
+  <footer class="c-site-footer"> copyright j.willson 2022 &copy;</footer>
 
 
 
@@ -89,13 +101,15 @@ Make the first test pass by adding a <header> </header>-->
 
 
 
-<!-- Your test console.
+  <!-- Your test console.
 Don't delete!-->
-<aside id="tests" aria-label="Test Readout." aria-live="polite" style="overflow:auto">
-</aside>
-<!-- partial -->
+  <aside id="tests" aria-label="Test Readout." aria-live="polite" style="overflow:auto">
+  </aside>
+  <!-- partial -->
   <script src='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/core.js'></script>
-<script src='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.js'></script><script  src="./script.js"></script>
-
+  <script src='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.js'></script>
+  <script src="./script.js"></script>
+  <script src="scripts2.js"></script>
 </body>
+
 </html>
