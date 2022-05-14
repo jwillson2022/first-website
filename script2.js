@@ -1,5 +1,4 @@
-<input id="text" />
-<button id="button">speak</button>
+
 
 
 function getNumberOrString(value) {
