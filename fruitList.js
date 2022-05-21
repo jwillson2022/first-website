@@ -1,12 +1,22 @@
 
 
+var fruits, emojis;
 
-let element_banana = document.getElementById('banana');
-element_banana.style.color = '#ffff33';
-element_banana.style.backgroundColor = '#000000';
-let element_apple = document.getElementById('apple');
-element_apple.style.color = '#33cc00';
-element_apple.style.backgroundColor = '#000000';
-let element_strawberry = document.getElementById('strawberry');
-element_strawberry.style.color = '#ff0000';
-element_strawberry.style.backgroundColor = '#000000';
+
+fruits = ['mango', 'lemon', 'strawberry', 'cherry', 'grape'];
+emojis = ['ðŸ¥­', 'ðŸ‹ ', 'ðŸ“', 'ðŸ’', 'ðŸ‡'];
+while (!!fruits.length) {
+  if(--window.LoopTrap <= 0) throw "Infinite loop.";
+  let element_list = document.getElementById('list');
+  let new_li = document.createElement('li');
+  let new_span = document.createElement('span');
+  new_span.innerText = fruits.shift();
+
+  new_li.appendChild(new_span);
+  let new_span2 = document.createElement('span');
+  new_span2.innerText = emojis.shift();
+
+  new_li.appendChild(new_span2);
+
+  element_list.appendChild(new_li);
+}
